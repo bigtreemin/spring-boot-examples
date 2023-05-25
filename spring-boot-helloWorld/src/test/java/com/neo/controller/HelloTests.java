@@ -26,7 +26,7 @@ public class HelloTests {
     @Test
     public void getHello() throws Exception {
         mvc.perform(MockMvcRequestBuilders
-                        .get("/hello")
+                        .get("/")
                         .accept(MediaType.APPLICATION_JSON))
                         .andExpect(status().isOk())
                         .andDo(MockMvcResultHandlers.print())
