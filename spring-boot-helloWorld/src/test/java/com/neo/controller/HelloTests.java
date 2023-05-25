@@ -31,7 +31,7 @@ public class HelloTests {
                         .andExpect(status().isOk())
                         .andDo(MockMvcResultHandlers.print())
                         .andExpect(content()
-                                .string(equalTo("Hello World")));
+                                .string(equalTo("Hello World, First jenkins build")));
     }
 
 }
