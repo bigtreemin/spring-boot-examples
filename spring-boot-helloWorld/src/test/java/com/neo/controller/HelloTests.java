@@ -12,6 +12,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 
 
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.hasSize;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -31,7 +32,7 @@ public class HelloTests {
                         .andExpect(status().isOk())
                         .andDo(MockMvcResultHandlers.print())
                         .andExpect(content()
-                                .string(equalTo("Hello World, First jenkins build")));
+                                .string(equalTo("Hello World, Jenkins build with docker")));
     }
 
 }
