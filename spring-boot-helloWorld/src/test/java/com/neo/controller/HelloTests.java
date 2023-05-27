@@ -32,7 +32,7 @@ public class HelloTests {
                         .andExpect(status().isOk())
                         .andDo(MockMvcResultHandlers.print())
                         .andExpect(content()
-                                .string(equalTo("Hello World, Jenkins build with docker")));
+                                .string(equalTo("Hello World, demodocker build with docker")));
     }
 
 }
