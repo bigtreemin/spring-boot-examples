@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Master pull code') {
+        stage('Demo branch pull code') {
             steps {
 
                 echo '拉取代码完成'
