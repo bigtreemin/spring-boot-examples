@@ -1,7 +1,7 @@
 FROM openjdk:17
 EXPOSE 7777
 
-WORKDIR /home
+WORKDIR /home/jenkinswork/demodocker2
 
-ADD jenkinswork/demodocker2/spring-boot-helloworld*.jar /home/jenkinswork/demodocker2/app-demodocker2.jar
+ADD spring-boot-helloworld*.jar /home/jenkinswork/demodocker2/app-demodocker2.jar
 ENTRYPOINT ["java","-jar","/home/jenkinswork/demodocker2/app-demodocker2.jar"]
