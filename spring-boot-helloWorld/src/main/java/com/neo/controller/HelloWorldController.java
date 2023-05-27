@@ -8,6 +8,6 @@ public class HelloWorldController {
 	
     @RequestMapping("/")
     public String index() {
-        return "Hello World, Jenkins build with docker";
+        return "Hello World, demodocker build with docker";
     }
 }
