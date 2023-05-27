@@ -3,5 +3,5 @@ EXPOSE 7777
 
 WORKDIR /home/jenkinswork
 
-ADD demodocker1/spring-boot-helloworld*.jar /home/jenkinswork/demodocker1/app-demodocker2.jar
-ENTRYPOINT ["java","-jar","/home/jenkinswork/demodocker1/app-demodocker2.jar"]
+ADD demodocker1/spring-boot-helloworld*.jar /home/jenkinswork/demodocker2/app-demodocker2.jar
+ENTRYPOINT ["java","-jar","/home/jenkinswork/demodocker2/app-demodocker2.jar"]
