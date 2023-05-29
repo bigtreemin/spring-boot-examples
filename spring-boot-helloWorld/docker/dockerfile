@@ -1,5 +1,5 @@
 FROM openjdk:17
-EXPOSE 7777
+EXPOSE 4444
 
 WORKDIR /home/jenkinswork/demodocker2
 
